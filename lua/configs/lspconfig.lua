@@ -31,6 +31,9 @@ end
 
 -- Define your servers here
 local servers = {
+  rust_analizer = {
+	filetypes = {"rust"}
+	},
   pylsp = {
     filetypes = { "python" },
     cmd = find_executable({
