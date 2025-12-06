@@ -38,6 +38,8 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+vim.lsp.config("rust_analyzer", { cmd = {"rust-analyzer"}, filetypes = {"rust"}, settings = { ["rust-analyzer"] = { procMacro = { enable = true } } } })
+vim.lsp.enable("rust_analyzer")
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
